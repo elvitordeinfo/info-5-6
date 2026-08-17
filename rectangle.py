@@ -1,0 +1,15 @@
+def main():
+    width = int(input("Enter the width of the rectangle: "))
+    print("O" * width)
+    print("O" * width)
+    print("O" * width)
+    print("O" * width)
+    print("O" * width)
+    p = (5*2) + (width*2)
+    print("perimeter:", p)
+    a = (5 * width)
+    print("Area:", a)
+
+
+if __name__ == "__main__":
+    main()
