@@ -9,7 +9,7 @@ def main():
     print("perimeter:", p)
     a = (5 * width)
     print("Area:", a)
-
-
+    d = (((5**2)+(width**2))**.5)
+    print("Diagonal:", d)
 if __name__ == "__main__":
-    main()
+        main()
