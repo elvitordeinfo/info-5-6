@@ -1,21 +1,16 @@
 import random
 
 def main():
-    coin = random.randint(1, 2)
+    coin = ["heads", "tails"] #square brackets for lists
+    flip = random.choice(coin)
+    guess = input("Heads or tails?: ").strip().lower()
 
-    guess = input("Enter your guess: ").title().strip()
+    print("The coin landed on", flip)
 
-    if coin == (1,2):
-        print("Heads")
-    elif coin == (1,2):
-        print("Tails")
-
-    if guess == coin:
-        print("Winner")
+    if guess == flip:
+        print("You won!")
     else:
-        print("Loser")
+        print("You lost")
 
 if __name__ == "__main__":
     main()
-
-
